@@ -4,13 +4,13 @@ QUnit.test('DataStore', function(assert) {
     ds.add('m@bond.com', 'tea');
     ds.add('james@bond.com', 'eshpressho');
   
-    assert.equal(ds.getAll(), {
+    assert.deepEqual(ds.getAll(), {
       'james@bond.com': 'eshpressho',
       'm@bond.com': 'tea'
     });
     ds.remove('james@bond.com');
 
-    assert.equal(ds.getAll(), {
+    assert.deepEqual(ds.getAll(), {
         'm@bond.com': 'tea'
     });
 
