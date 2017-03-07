@@ -17,3 +17,4 @@ QUnit.test('DataStore', function(assert) {
     assert.equal(ds.get('m@bond.com'), 'tea');
     assert.equal(ds.get('james@bond.com'), undefined);
   });
+
